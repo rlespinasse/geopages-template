@@ -38,10 +38,3 @@ body {
 .leaflet-popup {
   z-index: 700;
 }
-
-/* Ensure leaflet-atlas controls are visible */
-.leaflet-control {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
