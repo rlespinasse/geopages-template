@@ -19,5 +19,8 @@
     "@types/leaflet": "^1.9.8",
     "typescript": "^5.3.3",
     "vite": "^8.0.16"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
   }
 }
