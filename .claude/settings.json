@@ -11,11 +11,17 @@
     ]
   },
   "hooks": {
-    "PostSave": {
-      "src/config.ts": "npm run validate-config 2>&1"
-    }
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | grep -q 'src/config.ts$' && npm run validate-config"
+          }
+        ]
+      }
+    ]
   },
-  "customSkills": [
-    ".claude/skills/discover-dataset.md"
-  ]
+  "customSkills": [".claude/skills/discover-dataset.md"]
 }
