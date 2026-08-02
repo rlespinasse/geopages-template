@@ -18,7 +18,7 @@
   "devDependencies": {
     "@types/leaflet": "^1.9.8",
     "typescript": "^7.0.2",
-    "vite": "^8.1.5"
+    "vite": "^8.2.0"
   },
   "allowScripts": {
     "fsevents@2.3.3": true
